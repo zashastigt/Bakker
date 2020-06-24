@@ -1,0 +1,464 @@
+/*
+colors of the site:
+white:          #eaf4f6
+light gray:     #dfe8ea
+light pink:     #dc94c0
+middle pink:    #e54261
+dark pink:      #f356b2
+dark purple:    #3b0056
+light blue:			#c4e3e6
+midium blue:		#89c8ce
+*/
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	user-select: none;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+p {
+	margin: 0;
+}
+	
+#container {
+	position: relative;
+	height: 100vh;
+}
+
+/*header*/
+
+#mobile_info {
+	position: absolute;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+#header {
+	position: fixed;
+	background-image: linear-gradient(to right, #dc94c0 10%, #c4e3e6 60%);
+	height: 8%;
+	width: 100vw;
+	text-align: center;
+}
+
+#stripes_header {
+	position: absolute;
+	height: 100%;
+	right: 11vw;
+}
+
+#logo {
+	height: 100%;
+	float: left;
+	margin-left: 2%;
+	z-index: 100;
+}
+
+#order_days {
+	position: relative;
+	width: 50%;
+	margin-left: 25%;
+	color: #000;
+	z-index: 2;
+	margin-right: 15%;
+}
+
+#pick_up_times {
+	position: relative;
+	color: #000;
+	margin-left: 25%;
+	width: 50%;
+	z-index: 2;
+	margin-right: 15%;
+}
+
+#info {
+	position: absolute;
+	height: 6vh;
+	top: 1vh;
+	right: 20%;
+	z-index: 2;
+	visibility: hidden;
+}
+
+#shoping_cart {
+	position: absolute;
+	height: 6vh;
+	top: 1vh;
+	right: 2%;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#returnButton {
+	display: none;
+}
+
+/*main content frontpage*/
+
+#pakket_box {
+	position: absolute;
+	width: 100vw;
+	height: 70%;
+	top: 8%;
+	background-image: radial-gradient(farthest-corner at 0px 0px,#dc94c0 9%, #c4e3e6 40%, #fff 75%);
+	margin: 0;
+	float: left;
+	z-index: 2;
+}
+
+.pakket {
+	height: 90%;
+	width: 25vw;
+	font-size: 1.5em;
+	text-align: center;
+	background-color: #e54261;
+	box-shadow: 3px 3px 3px black;
+	margin: 2vh 4vw;
+	float: left;
+}
+
+.price {
+	margin: 1% auto;
+	color: #eaf4f6;
+}
+
+.pakket_image {
+	width: 90%;
+	height: 70%;
+	margin: 0 5%;
+	box-shadow: 3px 3px 3px black;
+}
+
+.pakket_text {
+	width: 100%;
+	text-align: left;
+	color: #eaf4f6;
+}
+
+.amount {
+	margin-left: 10%;
+	margin-top: -2%;
+}
+
+#quantity {
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: none;
+	font-size: 1em;
+	width: 10%;
+	font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+input:disabled {
+	color: #eaf4f6;;
+}
+
+.plus_minus_container {
+	font-size: 0.8em;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	color: #eaf4f6;
+}
+.desktop_button {
+	height: 30px;
+	width: 40%;
+	margin: 2% 5%;
+	float: left;
+	background-color: #3b0056;
+	color: #eaf4f6;
+	cursor: pointer;
+  transform: skew(-19.5deg, 0deg);
+}
+
+.skewblock {
+	position: absolute;
+	height: 100%;
+	margin-top: -25.5px;
+	margin-left: -0.5vw;
+	width: 1vw;
+	transform: skew(19.5deg);
+	z-index: 100;
+	background-color: #3b0056;
+}
+/* .desktop_button:before {
+	content: "";
+    position: absolute;
+	top: 60vh;
+	width: 0;
+	left: 12.9vw;
+	border-left: 15px solid transparent;
+    border-right: 15px solid #c4e3e6;
+    border-top: 15px solid transparent;
+	border-bottom: 15px solid #c4e3e6;
+	rotate: 180;
+} */
+
+#mobile_button_container {
+	height: 0;
+	width: 0;
+	visibility: hidden;	
+}
+
+.stock {
+	margin-left: 10%;
+
+}
+
+/*inactive*/
+
+#inactive {
+	position: fixed;
+	height: 96vh;
+	width: 100vw;
+	z-index: 100;
+	display: none;
+}
+
+#inactive_box {
+	position: absolute;
+	background-color: #3b0056;
+	height: 40%;
+	width: 100%;
+	top: 30%;
+	color: #eaf4f6;
+	z-index: 100;
+	text-align: center;
+	border: #e54261 2px solid;
+}
+
+#inactive_lines {
+	position: absolute;
+	height: 100%;
+	right: 16%;
+}
+
+#inactive_message {
+	z-index: 101;
+}
+
+/*footer*/
+
+#footer {
+	position: fixed;
+	width: 100vw;
+	height: 22vh;
+	bottom: 0;
+	background-color: #c4e3e6;
+	font-size: 1.5vh;
+	color: #000;
+}
+
+#stripes_footer {
+	position: absolute;
+	height: 100%;
+	right: 25%;
+}
+
+#contact {
+	position: relative;
+	width: 20%;
+	float: left;
+	margin-top: 1%;
+	margin-left: 5%;
+	z-index: 2;
+}
+
+#allergenen {
+	position: relative;
+	width: 50%;
+	margin-top: 1%;
+	display: inline-block;
+	z-index: 2;
+}
+
+.allergenen_list {
+	position: relative;
+	width: 20%;
+	float: left;
+	z-index: 2;
+}
+
+#tassen_info {
+	position: relative;
+	width: 20%;
+	float: right;
+	margin-right: 5%;
+	margin-top: 1%;
+	z-index: 2;
+}
+
+#admin_button {
+	color:#000;
+	position: absolute;
+	bottom: 1vh;
+	right: 1vw;
+	cursor: pointer;
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 600px){
+
+	
+
+	html, body {
+		/* overflow-y: scroll; */
+		overflow-x: scroll;
+	}
+
+	/* mobile info pop-up */
+
+	#mobile_info {
+		position: absolute;
+		height: fit-content;
+		width: 100vw;
+		background-color: #e54261;
+		box-shadow: black 2px 2px 2px;
+		visibility: visible;
+		z-index: 3;
+	}
+
+	.skewblock {
+	display: none;
+	}
+
+	#close_info{
+		height: 10vw;
+		margin: 1vw;
+		float: right;
+	}
+
+	#mobile_info_container {
+		margin: 5vw;
+	}
+
+	#mobile_info_container h3 {
+		margin: 0;
+	}
+	
+	#mobile_info_container p {
+		margin: 3% 0;
+	}
+
+	#order_days  {
+		margin-top: 0;
+	}
+	
+	/* mobile header */
+	
+	#stripes_header {
+		right: 5%;
+	}
+
+	#order_days {
+		visibility: hidden;
+
+	}
+	
+	#pick_up_times {
+		visibility: hidden;
+
+	}
+
+	#info{
+		visibility: visible;
+	}
+
+	/* mobile maincontent */
+	
+	#pakket_box {
+		width: 270vw;
+	}
+
+	.pakket {
+		width: 80vw;
+		margin-top: 7vw;
+	}
+
+	.pakket_image {
+		width: 90%;
+		height: 70%;
+		margin: 0 5%;
+		box-shadow: 5px 5px 5px black;
+	}
+	
+	.plus_minus_container {
+		height: 0;
+		margin-bottom: -10%;
+		font-size: 0;
+		visibility: hidden;
+	}
+
+	.plus_minus_container {
+		height: 1.2em;
+		font-size: 1.2em;
+	}
+
+	#mobile_button_container {
+		height: 2%;
+		width: 100%;
+		font-size: 1.2em;
+		margin-top: 0%;
+		visibility: visible;
+		
+	}
+
+	#stock {
+		float: right;
+	}
+
+	.mobile_button {
+		width: 45%;
+		color: #eaf4f6;
+		background-color: #3b0056;
+		text-align: center;
+		float: left;
+		margin: 0 2.5%;
+	}
+
+	#inactive_lines {
+		display: none;
+	}
+
+	/* mobile footer */
+
+	#stripes_footer {
+		right: 50%;
+	}
+
+	#contact {
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
+
+	#tassen_info {
+		width: 0;
+		height: 0;
+		visibility: hidden;
+	}
+
+	#allergenen {
+		width: 95%;
+		margin-left: 5%;
+	}
+
+	.allergenen_list {
+		width: 24%;
+	}
+	
+	ul {
+		padding-left: 5vw;
+	}
+}

@@ -1,0 +1,84 @@
+body {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+  background: #EA5C54;
+  background: linear-gradient(135deg, #dc94c0 0%, #c4e3e6 100%);
+}
+
+body ::-webkit-input-placeholder {
+  color: #4E546D;
+}
+
+#container {
+background-color: #9dc5c3;
+background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+width: 25vw;
+height: 50vh;
+margin: 0 auto;
+margin-top: 11%;
+border-top-left-radius: 20%;
+border-bottom-right-radius: 20%;
+box-shadow: 2px 2px 7px 2px black;
+}
+
+#tableContainer {
+  position: absolute;
+  margin-top: 16vh;
+  margin-left: -1.5vw;
+  z-index: 5;
+}
+
+input {
+  position: relative;
+  z-index: 5;
+  width: 20vw;
+  padding: 10px;
+  margin: 0px 0 1.5vw 8vh;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  box-shadow: 5px 5px 10px black;
+}
+
+
+#logText {
+  position: absolute;
+  color: lightgray;
+  font-size: 2em;
+  font-family: Blippo, fantasy;
+  text-align: right;
+  margin-top: -10vh;
+  margin-left: 3.7vw;
+}
+
+hr {
+  position: relative;
+  margin-top: -2vh;
+  width: 82%;
+  margin-left: 4vw;
+}
+
+#stripe {
+  position: absolute;
+  background-image:cover;
+  height: 50vh;
+  z-index: 0;
+  margin-left: 10vw;
+  margin-top: -16vh;
+}
+
+#cancel {
+  position: absolute;
+  color: white;
+  font-size: 0.5em;
+  margin-top: 48vh;
+  margin-left: 1vw;
+}
+
+td {
+  width: 100%;
+}
